@@ -1,5 +1,5 @@
 class Solution:
-    def reverseWords_manual(s):
+    def reverseWords_manual(self, s: str) -> str:
         res = ' '
         l, r = 0
 
