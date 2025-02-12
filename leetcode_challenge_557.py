@@ -1,7 +1,7 @@
 class Solution:
     def reverseWords_manual(self, s: str) -> str:
         res = ' '
-        l, r = 0
+        l, r = 0, 0
 
         while r < len(s):
             if s[r] != ' ':
