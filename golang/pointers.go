@@ -3,15 +3,11 @@ package main
 import "fmt"
 
 func main() {
-
-	var x *int
-	x = nil
-	take(x)
+	x := 10
+	change(&x)
 	fmt.Println(x)
-
 }
 
-func take(x *int) {
-	*x = 100
-
+func change(i *int) {
+	*i = 20
 }
