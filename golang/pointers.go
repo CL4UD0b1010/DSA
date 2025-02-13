@@ -4,13 +4,14 @@ import "fmt"
 
 func main() {
 
-	x := create()
+	var x *int
+	x = nil
+	take(x)
 	fmt.Println(x)
 
 }
 
-func create() *int {
-	x := 10
-	return &x
+func take(x *int) {
+	*x = 100
 
 }
